@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding:0;
+        margin: 0;
+    }
+    li{
+        text-align: center;
+    }
+    nav{
+        background-color: black;
+    }
+    button{
+        padding: 5px;
+        width: 55px;
+    }
+    .container img{
+        width: 100vw;
+        height: 23vw;
+    }
+    .txt{
+        position: absolute;
+        top: 6px;
+        text-align: center;
+        font-size: 107px;
+        left: 442px;
+        color: wheat;
+    }
+    .slider{
+        width: 500vw;
+        overflow: hidden;
+      
+    }
+    .imgg{
+       
+        width: 100vw;
+        height: 20vw;
+        overflow: hidden;
+        transition: 0.3;
+    }
+    pre{
+        position: absolute;
+        top: 250px;
+        font-size: 32px;
+        left: -129px;
+        color: palevioletred;
+    }
+    .pp{
+        position: absolute;
+        top: 630px;
+        left: 700px;
+        
+    }
+    .pp{
+        display: inline;
+    }
+   
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .control-btn {
+            background-color: #2d3c8a;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+       
+</style>
+<body>
+    <nav>
+        <li>
+            <button>about</button>
+            <button>case</button>
+        </li>
+    </nav>
+<div class="container">
+    <img src="Screenshot 2024-05-27 090653.png" alt="">
+    <div class="txt">
+        <p>Cars Store</p>
+        <pre>This is a car store web site that bought shoes. </pre>
+    </div>
+</div>
+<div class="slider">
+    <div class="photo">
+        <table>
+            <div class="pp">
+                <p >Car1</p>
+            </div>
+            <tr>
+                <img class="imgg" src="Screenshot 2024-05-27 090653.png" alt="">
+            </tr>
+           
+            <tr>
+                <img class="imgg"  src="Screenshot 2024-05-27 090653.png" alt="">
+                
+            </tr>
+           
+            <tr>
+                <img class="imgg"  src="Screenshot 2024-05-27 090653.png" alt="">
+            </tr>
+           
+            <tr>
+                <img class="imgg"  src="Screenshot 2024-05-27 090653.png" alt="">
+            </tr>
+           
+            <tr>
+                <img class="imgg"  src="Screenshot 2024-05-27 090653.png" alt="">
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+<div class="controls">
+    <button class="control-btn" onclick="prevSlide()">Previous</button>
+    <button class="control-btn" onclick="nextSlide()">Next</button>
+</div>
+</body>
+</html>
+<script>
+    
+        let currentIndex = 0;
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % document.querySelectorAll('.carousel img').length;
+           
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + document.querySelectorAll('.carousel img').length) % document.querySelectorAll('.carousel img').length;
+            
+        }
+
+       
+ </script>
