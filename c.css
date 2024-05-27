@@ -1,0 +1,67 @@
+body{
+    padding:0;
+    margin: 0;
+}
+li{
+    text-align: center;
+}
+nav{
+    background-color: black;
+}
+button{
+    padding: 5px;
+    width: 55px;
+}
+.container img{
+    width: 100vw;
+    height: 23vw;
+}
+.txt{
+    position: absolute;
+    top: 6px;
+    text-align: center;
+    font-size: 107px;
+    left: 442px;
+    color: wheat;
+}
+.slider{
+    width: 500vw;
+    overflow: hidden;
+  
+}
+.imgg{
+   
+    width: 100vw;
+    height: 20vw;
+    overflow: hidden;
+    transition: 0.3;
+}
+pre{
+    position: absolute;
+    top: 250px;
+    font-size: 32px;
+    left: -129px;
+    color: palevioletred;
+}
+.pp{
+    position: absolute;
+    top: 630px;
+    left: 700px;
+    
+}
+
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .control-btn {
+        background-color: #2d3c8a;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 8px 12px;
+        cursor: pointer;
+    }
